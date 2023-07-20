@@ -94,3 +94,20 @@ p {
 .div-dots {
     display: none;
 }
+
+/* reverse order of form & logos */
+#flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#logos { order: 1; }
+#form { order: 2; }
+/* ========= */
+
+.section-logos {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 3rem 0;
+    align-items: center;
+}
