@@ -161,12 +161,16 @@ button {
 @media (min-width: 48em) {
     html {
         background-image: none;
+        background-color: var(--clr-dark);
         /* background-size: 100%; */
         box-shadow: none;
     }
 
     body {
         position: relative;
+        display: inherit;
+        text-align: left;
+        padding: 2.5rem;
     }
 
     .background-images {
@@ -175,6 +179,15 @@ button {
         right: 0;
         top: 0;
         z-index: -1;
+        
+        transform: scale(2.0);
+        transform-origin: top right;
+    }
+
+
+    .main-logo {
+        margin: 0.5rem 0 3.5rem 0;
+        width: 15%;
     }
 }
 
