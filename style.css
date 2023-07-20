@@ -5,6 +5,8 @@
     --clr-hover: #B3FFE2;
     --clr-white: #FFF;
     --clr-dark: #121725;
+    --clr-dark-transparent: rgba(18, 23, 37, 0.9);
+
     --clr-dark-blue: #2C344B;
     --clr-med-blue: #5A668A;
     --clr-light-blue: #C2CBE5;
@@ -49,3 +51,25 @@ a {
 }
 
 /* || Global / Mobile */
+
+html {
+    min-height: 100%;
+    background-image: url(assets/mobile/image-host.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px var(--clr-dark-transparent);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    font-family: var(--ff-chivo);
+}
+
+
+
+.div-dots {
+    display: none;
+}
