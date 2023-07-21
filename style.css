@@ -133,7 +133,7 @@ form {
     gap: 1rem;
 }
 
-input [type=text], button {
+input [type=email], button {
     display: block;
 }
 
@@ -226,7 +226,7 @@ button {
         width: 75%;
         font-size: 1.125rem;
         margin: 2rem 0 2.5rem 0;
-        /* max-width: 35rem; */
+        max-width: 35rem;
     }
 
     #logos { order: 2; }
@@ -245,6 +245,7 @@ button {
         border-radius: 100px;
         border: none;
         font-size: 0.875rem;
+        flex-grow: 1;
     }
 
     button {
@@ -309,7 +310,7 @@ button {
     p {
         font-size: 1.25rem;
         line-height: 1.75rem;
-        width: 70%;
+        width: 65%;
     }
 
     .div-dots {
