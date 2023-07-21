@@ -5,7 +5,7 @@
     --clr-hover: #B3FFE2;
     --clr-white: #FFF;
     --clr-dark: #121725;
-    --clr-dark-transparent: rgba(18, 23, 37, 0.3);
+    --clr-dark-transparent: rgba(18, 23, 37, 0.9);
 
     --clr-dark-blue: #2C344B;
     --clr-med-blue: #5A668A;
@@ -69,12 +69,17 @@ body {
     font-family: var(--ff-chivo);
 }
 
+main {
+    max-width: 30rem;
+}
+
 .background-images {
     display: none;
 }
 
 .main-logo {
     margin: 2.5rem 0 3.5rem 0;
+    width: 8rem;
 }
 
 h1 {
@@ -139,7 +144,17 @@ input {
     border: none;
     font-size: 0.875rem;
     font-weight: var(--fw-bold);
-    color: var(--clr-med-blue);
+    color: var(--clr-light-blue);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--clr-white);
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px var(--clr-dark-blue);
 }
 
 input:focus {
@@ -147,6 +162,7 @@ input:focus {
     outline: none;
     font-weight: var(--fw-normal);
 }
+
 
 button {
     background-color: var(--clr-accent);
@@ -192,6 +208,7 @@ button {
         background-color: var(--clr-dark);
         padding: 6rem 3rem 6rem 0;
         margin-top: 9.5rem;
+        max-width: 55rem;
     }
 
     h1{
@@ -203,6 +220,7 @@ button {
         width: 75%;
         font-size: 1.125rem;
         margin: 2rem 0 2.5rem 0;
+        /* max-width: 35rem; */
     }
 
     #logos { order: 2; }
@@ -211,34 +229,22 @@ button {
     form {
         flex-direction: row;
         background-color: var(--clr-dark-blue);
-        width: 75%;
+        gap: 0;
         max-width: 30rem;
-        justify-content: space-between;
         padding: 5px;
         border-radius: 100px;
     }
 
     input {
-        width: 60%;
         border-radius: 100px;
         border: none;
         font-size: 0.875rem;
     }
 
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover, 
-    input:-webkit-autofill:focus, 
-    input:-webkit-autofill:active{
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: var(--clr-white);
-        transition: background-color 5000s ease-in-out 0s;
-        /* box-shadow: inset 0 0 20px 20px var(--clr-dark-transparent); */
-}
-
-
     button {
         background-color: var(--clr-accent);
         padding: 14px 30px;
+        margin-left: auto;
     }    
     
     button:hover {
@@ -248,11 +254,13 @@ button {
 
     .section-logos {
         width: 90%;
+        max-width: 35rem;
+        margin: 4rem 0;
     }
 
     .div-dots {
         display: block;
-        position: fixed;
+        position: absolute;
         bottom: -5px;
     }
 
