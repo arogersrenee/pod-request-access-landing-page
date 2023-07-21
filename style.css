@@ -174,6 +174,12 @@ button {
     box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.50);
 }
 
+.error {
+    color: var(--clr-error);
+    font-size: 0.75rem;
+    font-weight: var(--fw-normal);
+}
+
 /* || TABLET (768px) */
 @media (min-width: 48em) {
     html {
@@ -250,6 +256,7 @@ button {
     button:hover {
         background-color: var(--clr-hover);
         padding: 14px 30px;
+        cursor: pointer;
     }
 
     .section-logos {
@@ -272,6 +279,43 @@ button {
 
 /* || DESKTOP (1440px) */
 @media (min-width: 90em) {
+    
+    body {
+        padding: 6.5rem 10.5rem;
+    }
+
+   .background-images {
+        top: 8rem;
+        transform: scale(1.125);
+    }
+
+    .main-logo {
+        margin: 0 0;
+        width: 8rem;
+    }
+
+    main {
+        /* padding: 6rem 3rem 6rem 0; */
+        margin-top: 6.5rem;
+        width: 65%;
+    }
 
 
+    h1{
+        font-size: 3.25rem;
+        line-height: 3.875rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        width: 70%;
+    }
+
+    .div-dots {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 200px;
+    }
 }
