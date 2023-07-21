@@ -112,7 +112,7 @@ p {
 }
 
 #logos { order: 1; }
-#form { order: 2; }
+.section-form { order: 2; }
 /* ========= */
 
 .section-logos {
@@ -144,6 +144,10 @@ input {
     border: none;
     font-size: 0.875rem;
     font-weight: var(--fw-bold);
+    color: var(--clr-light-blue);
+}  
+
+input::placeholder{
     color: var(--clr-light-blue);
 }
 
@@ -178,6 +182,9 @@ button {
     color: var(--clr-error);
     font-size: 0.75rem;
     font-weight: var(--fw-normal);
+    text-align: left;
+    padding-left: 32px;
+    margin: 0;
 }
 
 /* || TABLET (768px) */
