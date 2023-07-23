@@ -55,7 +55,9 @@ This was my first project styling a form in CSS and using JavaScript to create t
 - JS: how to perform a function based on the size of the user's device (if statement below)
 - JS: Adding nodes between siblings (see function below)
 
-One challenge I had to overcome was removing the built-in validation messages. I didn't want these message to overlap the custom message that I added with JS. I ultimately decided to change the input type to "text" to get around the "email" validation. I'm not confident this is the best practice, but it does what I wanted it to do.
+One challenge I had to overcome was removing the built-in validation messages. I didn't want these messages to overlap with the custom message I added with JS. I ultimately decided to change the input type to "text" to get around the built-in "email" validation. I'm not confident this is the best practice, but it does what I wanted it to do for now.
+
+I also learned that the onsubmit event handler needed to be a boolean value. The purpose of a form validation script is to return a boolean value (true or false) to the onsubmit event handler. A value of true means that the form will be submitted while a false value will block the form from being subm
 
 Here's a bit of JavaScript I learned along the way:
 
